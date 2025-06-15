@@ -1,0 +1,26 @@
+{
+  "name": "forensicswhois-extension",
+  "version": "1.0.0",
+  "description": "A professional browser extension for forensic website analysis",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js --dev",
+    "clean": "rimraf dist",
+    "prebuild": "npm run clean"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.1",
+    "fs-extra": "^11.1.1",
+    "rimraf": "^5.0.5"
+  },
+  "keywords": [
+    "forensics",
+    "whois",
+    "security",
+    "browser-extension",
+    "chrome-extension"
+  ],
+  "author": "ForensicsWHOIS Team",
+  "license": "MIT",
+  "private": true
+} 

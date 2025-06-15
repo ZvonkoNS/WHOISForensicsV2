@@ -1,0 +1,65 @@
+{
+  "manifest_version": 3,
+  "name": "ForensicsWHOIS",
+  "version": "1.0.0",
+  "description": "A professional browser extension for law enforcement and security professionals to gather forensic information about websites including WHOIS data, DNS records, SSL certificates, and digital artifacts.",
+  "author": "ForensicsWHOIS Team",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "cookies",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://api.apilayer.com/*",
+    "https://rdap.verisign.com/*",
+    "https://rdap.publicinterestregistry.org/*",
+    "https://rdap.afilias.net/*",
+    "https://rdap.nic.us/*",
+    "https://rdap.nominet.uk/*",
+    "https://rdap.ca/*",
+    "https://rdap.audns.net.au/*",
+    "https://rdap.denic.de/*",
+    "https://rdap.nic.fr/*",
+    "https://rdap.nic.it/*",
+    "https://rdap.sidn.nl/*",
+    "https://rdap.dns.be/*",
+    "https://rdap.nic.ch/*",
+    "https://rdap.nic.at/*",
+    "https://rdap.internetstiftelsen.se/*",
+    "https://rdap.norid.no/*",
+    "https://rdap.dk-hostmaster.dk/*",
+    "https://rdap.ficora.fi/*",
+    "https://rdap.dns.pl/*",
+    "https://rdap.nic.cz/*",
+    "https://rdap.jprs.jp/*",
+    "https://rdap.kr/*",
+    "https://rdap.cnnic.cn/*",
+    "https://rdap.registry.in/*",
+    "https://rdap.registro.br/*",
+    "https://rdap.mx/*",
+    "https://rdap.tcinet.ru/*",
+    "https://rdap.srs.net.nz/*",
+    "https://dns.google/*",
+    "https://crt.sh/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; frame-ancestors 'none';"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "scripts/background.js"
+  }
+} 
